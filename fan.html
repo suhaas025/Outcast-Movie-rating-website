@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+
+    
+        <style>
+            .drop:hover{
+                transform: scale(1.02);
+                box-shadow: 0px 0px 5px grey;
+                transition: 0.5s;
+            }
+            .drop{
+                border-radius: 7px;
+                width: 50px;
+                height: 25px;
+            }
+            .title:hover{
+                transform: scale(1.02);
+                box-shadow: 0px 2px 0px white;
+                transition: 0.5s; 
+            }
+            .size:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 7px 0px orange;
+        transition: 0.5s;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    .list:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 0px 5px grey;
+        transition: 0.5s;
+    }
+    #tr:hover{
+       fill: orange;
+    }
+</style>
+<script>
+    var i=0;
+    function rate(){
+        var sel=document.getElementById('sel').value;
+        var rat=16.2;
+        var arat = (rat+sel)/2;
+        i++;
+        arat=parseFloat(arat).toFixed(2);
+        document.getElementById('rat').innerHTML=arat;
+        if(i==2)
+        {
+            document.getElementById('star').style.fill="lightblue";
+            i=0;
+
+        }
+      
+        
+    }
+    function rate1(){
+        var sel=document.getElementById('sel1').value;
+        var rat=14.4;
+        var arat = (rat+sel)/2;
+        i++;
+        arat=parseFloat(arat).toFixed(2);
+        document.getElementById('rat1').innerHTML=arat;
+        if(i==2)
+        {
+            document.getElementById('star1').style.fill="lightblue";
+            i=0;
+
+        }
+      
+        
+    }
+    function rate2(){
+        var sel=document.getElementById('sel2').value;
+        var rat=15.8;
+        var arat = (rat+sel)/2;
+        i++;
+        arat=parseFloat(arat).toFixed(2);
+        document.getElementById('rat2').innerHTML=arat;
+        if(i==2)
+        {
+            document.getElementById('star2').style.fill="lightblue";
+            i=0;
+
+        }
+      
+        
+    }
+    function rate3(){
+        var sel=document.getElementById('sel3').value;
+        var rat=13.8;
+        var arat = (rat+sel)/2;
+        i++;
+        arat=parseFloat(arat).toFixed(2);
+        document.getElementById('rat3').innerHTML=arat;
+        if(i==2)
+        {
+            document.getElementById('star2').style.fill="lightblue";
+            i=0;
+
+        }
+      
+        
+    }
+    function i(){
+            document.getElementById('tr').style.fill="orange";
+        }
+        function out(){
+            document.getElementById('tr1').style.fill="white";
+
+        }
+        
+</script>
+<script src="local.js"></script>
+
+<body style="background-color: black;">
+    <!...movie 1...>
+    <div style="background-color: #524d4d75;position: absolute;height: 500px;width: 200px"  class="size">
+        <a href=""><img src="kgf.jpg" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="val" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="1" onclick="val()"><img src="watchlist2.png" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat" value="19.2">9.6</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width:120px"><a href="" style="text-decoration:none;color: white">KGF: Chapter 2</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+    <!...movie2...>
+    <div style="background-color: #524d4d75;position: absolute;left: 230px;height: 500px;width: 200px"  class="size">
+        <a href=""><img src="spiderman.jpg" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="sp" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="2" onclick="valsp()"><img src="watchlist2.png" id="im" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat1" value="16.8">8.4</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star1" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel1" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate1()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width: 180px"><a href="" style="text-decoration:none;color: white">Spiderman:No way Home</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+    <!...movie3...>
+    <div style="background-color: #524d4d75;position: absolute;left: 450px;height: 500px;width: 200px"  class="size">
+        <a href=""><img src="RRR.jpeg" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="val" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="1" onclick="val()"><img src="watchlist2.png" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat2" value="15.8">8.9</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star2" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel2" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate2()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width: 50px"><a href="" style="text-decoration:none;color: white">RRR</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+    <!...movie4..>
+     <div style="background-color: #524d4d75;position: absolute;left: 670px;height: 500px;width: 200px"  class="size">
+        <a href=""><img src="moonknight.webp" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="val" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="1" onclick="val()"><img src="watchlist2.png" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat2" value="14.2">7.1</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star1" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel1" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate1()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width: 100px"><a href="" style="text-decoration:none;color: white">Moonknight</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+    <!...movie5...>
+    <div style="background-color: #524d4d75;position: absolute;left: 890px;height: 500px;width: 200px"  class="size">
+        <a href=""><img src="master.jpg" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="val" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="1" onclick="val()"><img src="watchlist2.png" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat2" value="16.2">8.1</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star1" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel1" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate1()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width: 50px"><a href="" style="text-decoration:none;color: white">Master</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+    <!...movie6...>
+    <div style="background-color: #524d4d75;position: absolute;left: 1110px;height: 500px;width: 200px"  class="size">
+        <a href="beast.html" target="_blank"><img src="beast.jpg" height="270" width="200"></a>
+        <!---/*style="position: relative;bottom:275px;opacity:0.7"--->
+        <button id="val" type="image" style="position: relative;opacity:0.7;height: 40px;width: 20px;bottom: 275px;" value="1" onclick="valb()"><img src="watchlist2.png" id="im1" style="position: relative;right: 9px;bottom: 2px" height="40px" width="20px" ></button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <svg height="50" width="70" >
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="orange" fill="orange"/>
+                    </svg>
+                </td>
+                <td>
+                    <p style="color:white;font-size: 17px;position: relative;right:20px;bottom: 10px" id="rat3" value="16.2">6.9</p>
+                </td>
+                <td>
+                    <svg height="50" width="70" >
+                        <style>
+                            .star:hover{
+                                fill: lightblue;
+                                transition: 0.5s;
+                            }
+                        </style>
+                        <polygon points="10,10 17,10 20,5 22,10 30,10 25,15 27,22 20,18 13,22 15,15" stroke="lightblue" fill="ashgrey" class="star" id="star3" />
+                    </svg>
+                </td>
+                <td>
+                    <form><select class="drop" id="sel3" style="position: relative;left: -40px;background-color: black;color:white;border: 0px;bottom: 12px" onclick="rate3()">
+                        <option style="background-color: #524d4d75;color: white" value="1">1</option>
+                        <option style="background-color: #524d4d75" value="2" >2</option>
+                        <option style="background-color: #524d4d75" value="3" >3</option>
+                        <option style="background-color: #524d4d75" value="4" >4</option>
+                        <option style="background-color: #524d4d75" value="5" >5</option>
+                        <option style="background-color: #524d4d75" value="6" >6</option>
+                        <option style="background-color: #524d4d75" value="7" >7</option>
+                        <option style="background-color: #524d4d75" value="8" >8</option>
+                        <option style="background-color: #524d4d75" value="9" >9</option>
+                        <option style="background-color: #524d4d75" value="10" >10</option>   
+                    </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+        
+        
+        
+        
+        
+        <h4 class="title" style="font-weight:bold;position: relative;bottom: 40px;left: 10px;width: 50px"><a href="" style="text-decoration:none;color: white">Beast</a></h4>
+        <br>
+        <div style="background-color: #524d4d72;position: relative;bottom: 70px;left:20px;width: 150px; border-radius :7px" class="list">
+
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f" style="text-decoration: none;color:lightblue">
+                <p style="color: lightblue;font-size: x-large">&nbsp; Watch now<img src="arrow.png" height="20" width="20" style="position:relative;top: 2px;opacity: 0.3"></p>
+            </a>
+
+        </div>
+        <a href="" style="text-decoration: none;position: relative;left: 50px;bottom:80px"><svg height="20" width="80" onmouseover="i()" onmouseout="out()" >
+            
+            <polygon points="0,10 10,15 0,20" fill="white" id="tr" />
+            <text x="20" y="20" font-size="20" fill="white" id="tr1">Trailer</text>
+        </svg></a>
+    </div>
+</body>
+
+</html>

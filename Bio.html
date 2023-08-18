@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo.png">
+        <title>
+            Outcast rating reviews and more.
+        </title>
+        <style>
+            .sidenav{
+                height: 0%;
+                width: 100%;
+                position: fixed;
+                z-index: 99;
+                top: 0;
+                left: 0;
+                background-color: rgb(17, 17, 17);
+                opacity: 0.98;
+                overflow-x: hidden;
+                overflow-y:visible;
+                transition: 0.5s;
+            }
+    
+            .sidenav::-webkit-scrollbar{
+                opacity: 0;
+            }
+    
+            .sidenav a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+    
+            .sidenav a:hover{
+                color: #f1f1f1
+            }
+    
+            .sidenav .closebtn {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+    
+            .sidenavbutton{
+                z-index: 1;
+                top: 50%;
+                left: 0%;
+                padding-top: 30px;
+                padding-right: 15px;
+                padding-left: 15px;
+                background-color: black;
+            }
+    
+            .sidenavbuttons{
+                width: 100px;
+                display: inline-block;
+                padding: 0px 0px 0px 0px;
+                margin-right: 10px;
+                background: transparent;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            .line:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 2px 0px orange;
+            transition: 0.5s;
+        }
+        </style>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.height = "350px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.height = "0";
+            }
+    
+            window.onclick = function(event){
+                if (event.target == document.getElementById("mySidenav")){
+                    document.getElementById("mySidenav").style.height = "0";
+                }
+            }
+        </script>
+        <header style="background-color: black;position: relative;left: 0px;bottom: 10px">
+            <div style="height:60px">
+                <a href="HOMEPAGE.html"><img src="logo.jpeg" alt="logo" height="40" width="70" style="position: relative;left: 110px;text-decoration: none;" /></a>
+                <!...have to work on menu option...>
+                <button class="sidenavbutton" onclick="openNav()" style="font-size: 20px; color: white;"><img src="menu.png" height="20" width="20" style="position: relative;left:130px;bottom: 6px;text-decoration: none">
+                    <b style="color: white;position: relative; left: 130px;bottom: 10px;size: 10;font-size: 18px" class="line">Menu</b></button>
+                <!...menu...>
+                <div id="mySidenav" class="sidenav">
+                    <button class="closebtn" onclick="closeNav()" style="position:absolute;right:300px;color: red;font-family: 'Calibri';background-color: black;background: transparent;border:none;">x</button>
+                    <img src="logo.jpeg" alt="logo" height="40" width="70" style="position:absolute;left:300px;bottom:285px;">
+                    <pre style="color:white;position:absolute;bottom:10px;left:310px"><h1 style="color:orange">Movies                    TV Shows                    Awards  & Events</h1><br>
+                    <p style="position:absolute;bottom:180px">Release Calendar                                     What's on TV & Streaming                               Oscars</p><br>
+                    <p style="position:absolute;bottom:160px">DVD & Blu-ray Releases                               Top 250 TV Shows                                       Best Picture Winners</p><br>
+                    <p style="position:absolute;bottom:140px">Top 250 Movies                                       Most Popular TV Shows                                  Emmys</p><br>
+                    <p style="position:absolute;bottom:120px">Most Popular Movies                                  Browse TV Shows by Genre                               STARmeter Awards</p><br>
+                    <p style="position:absolute;bottom:100px">Browse Movies by Genre                               TV News                                                San Diego Comic-con</p><br>
+                    <p style="position:absolute;bottom:80px">Top Box Office                                       India TV Spotlight                                     New York Comic-con</p></pre>
+                    
+                </div>
+                <!...Seach bar...>
+                <select style="position: relative;left: 155px;bottom: 13px;height: 32px;width: 50px;background-color:rgba(245, 245, 245, 0.759);padding: 5px;font-weight: bold;border-radius: 5px">
+                        <option style="position: relative;left: 287px;bottom: 22px;height: 35px;width: 50px;background-color:black;color: white;font-weight: bold" >All</option>
+                        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Titles</option>
+                        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">TV Episodes</option>
+                        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Advanced Search</option>
+                    </select>
+                <input type="text" name="movie" placeholder="Search outcast.." size="90" style="position: relative;left: 150px; bottom: 13px;height: 25px;border-radius: 5px">
+                <button type="submit" style="position: relative;left:145px; bottom: 8px;border-radius: 5px"><img src="search.png" height="21.5" width="30" ></button>
+                <!...searchbar end...>
+    
+                <a href="" style="text-decoration: none"><b style="size: 20px;position: relative;left: 160px;bottom: 10px;color: white" class="line">OutcastPro</b></a>
+                <!...vertical line...>
+                <img src="line.png" height="40" width="10" style="position: relative;left:170px;top: 3px">
+                <!...watchlist...>
+                <img src="watchlist.png" style="size: 20px;position: relative;left: 180px;top: 5px;">
+                <a href="main.html" style="text-decoration: none"><b style="size: 20px;position: relative;left: 185px;bottom: 10px; color:white" class="line">Watchlist</b></a>
+                <!...watchlistend...>
+                <!sign in...>
+                <a href="regitration.html" style="text-decoration: none"><b style="size: 20px;position: relative;left: 210px;bottom: 10px; color:white" class="line">Sign In</b></a>
+                <!...sign in end...>
+                <b><select style="position: relative;left: 230px;bottom: 10px;height: 35px;width: 50px;padding:5px;background-color:black;color: white;border: 0px;font-weight: bold " class="line">
+                        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold" ><b>EN</b></option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Telugu</b></option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Tamil</b></option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Fracais</b></option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">German</option>
+    
+    
+                </select>
+                </b>
+    
+            </div>
+        </header>
+        
+    </head> 
+    <style>
+        *
+        {
+            font-family: Calibri;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        table.a
+        {
+          width: 95%;
+          border: solid 1px rgba(0,0,0,0.2);
+          margin-left:auto;
+          margin-right:auto;
+          border-radius: 5px;
+        }
+        table.b
+        {
+          width: 100%;
+        }
+    </style>
+    <body style="background-color: lightgray;">
+        <table class="b">
+            <colgroup>
+                <col style="width:550px" /><col style="width:760px" /><col style="width:550px" />
+            </colgroup>
+            <tr>
+                <td></td>
+                <td style="background-color:white">
+                    <br>
+                    <table class="a">
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td><img src="107.jpg"></td>
+                                        <td><h3><a href="Celebrity.html">Thalapathy Vijay</a></h3><h2>Biography</h2><br><br></td>
+                                    </tr>
+                                </table>
+                                <forms>
+                                    <hr>
+                                    <h3>Overview (3)</h3>
+                                    <table>
+                                        <tr>
+                                            <td>Born:</td>
+                                            <td>June 22, 1974 in Madras, Tamil Nadu, India</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nicknames:</td>
+                                            <td>Ilayathalapathy<br>Thalapathy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Height:</td>
+                                            <td>5' 10'' (1.78 m)</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h3>Mini Bio (1)</h3>
+                                    <p>Joseph Vijay Chandrasekhar (born 22 June 1974), known mononymously as Vijay, is an<br>
+                                    Indian actor, dancer, playback singer and philanthropist who works predominantly in Tamil<br>
+                                    cinema and also appeared in other Indian languages films. Referred to by fans and media<br>
+                                    as "Thalapathy" (commander), Vijay is the highest paid actor in Tamil cinema. He has<br>
+                                    significant fan following globally. He has won won numerous awards, including eight Vijay<br>
+                                    Awards by Star India, three Tamil Nadu State Film Awards by Government of Tamil Nadu,<br>
+                                    and a SIIMA Award. He has been included several times in the Forbes India Celebrity 100<br>
+                                    list, based on the earnings of Indian celebrities.<br>
+                                    <i>- IMDb Mini Biography By: Raju</i></p>
+                                    <hr>
+                                    <h3>Family (4)</h3>
+                                    <table>
+                                        <tr>
+                                            <td>Spouse:</td>
+                                            <td>Sangeetha Sornalingam (25 August 1999 - ?)  (2 children)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Children:</td>
+                                            <td>Jason Sanjay<br>Divya Shasha</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Parents:</td>
+                                            <td>S.A. Chandrashekhar<br>Chandrasekhar, Shoba</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Relatives:</td>
+                                            <td>Chandrasekhar, Vidhya (sibling)</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <h3>Trade Mark (6)</h3>
+                                    <p>Dancing Skills<br>
+                                    Good singer<br>
+                                    Good Comedy Timing<br>
+                                    Shy personality<br>
+                                    Calm and subtle acting<br>
+                                    Powerful screen presence</p>
+                                    <hr>
+                                    <h3>Trivia (6)</h3>
+                                    <p>He entered the Tamil film industry as a child artist.<br>
+                                    His mother Shobha Chandrasekar is an accomplished playback singer.<br>
+                                    Vijay had a sister named Vidhya, who died at the age of two years<br>
+                                    Son of S.A. Chandrashekhar.<br>
+                                    In 2012 and 2013, he was featured on the Indian edition of Forbes' 'Celebrity 100' lists,<br>
+                                    based on the income and popularity of Indian celebrities.<br>
+                                    He has the same date of birth as Devayani, including the year. However, the places of<br>
+                                    birth are different. He was born in Chennai while Devayani was born in Mumbai.</p>
+                                    <hr>
+                                    <h3>Salary (3)</h3>
+                                    <p>Puli (2015)-Rs.30,00,00,000</p>
+                                </forms>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <footer style="background-color: black;position:relative;top: 500px">
+            <br>
+            <br>
+            <div class="row 1">
+                <a href="https://www.facebook.com/Cristiano" target="_blank"><img src="fb.png" style="position: relative;;left: 600px" height="25" width="25"></a>
+                <a href="https://www.instagram.com/jeffbezos/?hl=en" target="_blank"><img src="insta.png" style="position: relative;;left: 650px" height="25" width="25"></a>
+                <a href="" target="_blank"><img src="twitch.png" style="position: relative;left:700px" height="25" width="25"></a>
+                <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="twitter.png" style="position: relative;;left: 750px" height="25" width="25"></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="youtube.png" style="position: relative;;left: 800px;bottom: 2px"></a>
+
+            </div>
+            <br>
+            <br>
+            <div class="row 2">
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px">Get the Outcast app
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px">Help
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px">Site Index
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px">OutcastPro
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px">Box Office Mojo
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px">Outcast Developers
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                
+            </div>
+            <br>
+            <div class="row 3">
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px">Press Room
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px">Advertising
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px">Jobs
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px">Condtions of Use
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px">Privacy Policy
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px">Internet-Based Ads
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+            </div>
+            <br>
+            
+            <center>
+                <div class="row 4">
+                    <p style="color: white;font-weight: bold">an&nbsp;<img src="amrita.png" width="70" height="30" style="position: relative;top:13px">&nbsp;Company</p>
+                </div>
+            </center>
+            <br>
+            <center><p style="color: grey;font-size:small">© 2021-2022 by Oucast.com, Inc.</p></center>
+
+        </footer>
+
+    </body>
+</html5

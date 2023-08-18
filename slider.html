@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript - Using a timer to change an image</title>
+    <script type="text/javascript">
+        var image_tracker = 'orange';
+
+        function change() {
+            var image = document.getElementById('circle');
+            if (image_tracker == 'orange') {
+                image.src = 'shangchi.jpg';
+                image_tracker = 'blue';
+            } else if (image_tracker == 'blue') {
+                image.src = 'doctorstrange.jpg';
+                image_tracker = 'green';
+            } else if (image_tracker == 'green') {
+                image.src = 'batman.jpg';
+                image_tracker = 'yellow';
+            } else if (image_tracker == 'yellow') {
+                image.src= 'RRR.jpeg';
+                image_tracker = 'orange';
+            }
+        }
+        var timer = setInterval('change();', 4000);
+    </script>
+
+</head>
+
+<body>
+
+    <img src="peaky.jpg" alt="Circle" id="circle">
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .trans{
+        transition:0.5s;
+        animation: infinite;
+        
+    }
+    </style>
+    <script type="text/javascript">
+        var image_tracker = 'orange';
+
+        function change() {
+            var image = document.getElementById('circle');
+            if (image_tracker == 'orange') {
+                image.src = 'blockhitjpg.jpg';
+                image_tracker = 'blue';
+            } else if (image_tracker == 'blue') {
+                image.src = 'shangchi.jpg';
+                image_tracker = 'green';
+            } else if (image_tracker == 'green') {
+                image.src = 'batman1.jpg';
+                image_tracker = 'yellow';
+            } else if (image_tracker == 'yellow') {
+                image.src = 'avatar.jpg';
+                image_tracker = 'orange';
+            }
+        }
+        var timer = setInterval('change();', 4000);
+    </script>
+
+    <body style="background-color: black" class="trans">
+        <img src='shangchi.jpg' alt="circle" id="circle">
+         
+    </body>
+</html>

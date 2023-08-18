@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo.png">
+        <title>
+            Outcast rating reviews and more.
+        </title>
+        <header style="background-color: black;position: relative;left: 0px;bottom: 10px">
+            <div>
+                <a href="HOMEPAGE.html"><img src="logo.jpeg" alt="logo" height="40" width="70" style="position: relative;left: 110px"/></a>
+                <!...have to work on menu option...>
+                <a href=""><img src="menu.png" height="20" width="20" style="position: relative;left:130px;bottom: 6px">
+                <b style="color: white;position: relative; left: 130px;bottom: 10px;size: 10;font-size: 18px">Menu</b></a>
+                <!...menu...>
+                <!...Seach bar...>
+                <select style="position: relative;left: 155px;bottom: 13px;height: 32px;width: 50px;background-color:rgba(245, 245, 245, 0.759);padding: 5px;font-weight: bold;" >
+                    <option style="position: relative;left: 287px;bottom: 22px;height: 35px;width: 50px;background-color:black;color: white;font-weight: bold" >All</option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Titles</option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">TV Episodes</option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Advanced Search</option>
+                </select>
+                <input placeholder="Search outcast.." size="90" style="position: relative;left: 150px; bottom: 13px;height: 25px">
+                <button type="submit" style="position: relative;left:145px; bottom: 8px;"><img src="search.png" height="21.5" width="30" ></button>
+                <!...searchbar end...>
+    
+                <a href=""><b style="size: 20px;position: relative;left: 160px;bottom: 10px;color: white">OutcastPro</b></a>
+                <!...vertical line...>
+                <img src="line.png" height="40" width="10" style="position: relative;left:170px;top: 3px">
+                <!...watchlist...>
+                <img src="watchlist.png" style="size: 20px;position: relative;left: 180px;top: 5px;">
+                <a href=""><b style="size: 20px;position: relative;left: 185px;bottom: 10px; color:white">Watchlist</b></a>
+                <!...watchlistend...>
+                <!sign in...>
+                <a href=""><b style="size: 20px;position: relative;left: 210px;bottom: 10px; color:white">Sign In</b></a>
+                <!...sign in end...>
+                <b><select style="position: relative;left: 230px;bottom: 10px;height: 35px;width: 50px;padding:5px;background-color:black;color: white;border: 0px;font-weight: bold">
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>EN</b></option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Telugu</b></option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Tamil</b></option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Fracais</b></option>
+                    <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">German</option>
+    
+    
+                </select></b>
+                      
+            </div>
+        </header>
+        
+    </head>
+    
+    
+          
+    <body style="background-color: white;">
+
+            <center><section>
+                <h1 id="title">OUTCAST Registeration Page</h1>
+            </section></center>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            
+            <section>
+                <center><p id="description">Fill the details below to create your OUTCAST account:)</p></center>
+                <form id="Survry-form" onsubmit="myFunction()"action="HOMEPAGE.html">
+                
+                    <script>
+                        function onfocusinput(input){
+                            input.style.color="green"
+                        }
+                        function onblurinput(input){
+                            input.style.color="black"
+                        }
+                    </script>
+                
+                    <div class="input-headings">
+                <label form="name" id="name-label" style="color:white">Your Name</label>
+                <input id="name" type="text" name="name" placeholder="Outcast"onfocus="onfocusinput(this)" onblur="onblurinput(this)" class="form-inputs"required></input>
+                <html>
+
+
+</head>
+
+
+
+                <br>
+                <label form="email" id="email-label" style="color:white">Email</label>
+                <input id="email" type="email" name="email" placeholder="outcast@gmail.com" onfocus="onfocusinput(this)" onblur="onblurinput(this)"class="form-inputs"required></input>
+                <br>
+                <label form="pwd" id="password-label" style="color:white">Password</label>
+                        <div class="pass">
+                    <input id="pass"
+                           type="password"
+                           minlength="8"
+                           name="pass"
+                           placeholder="Enter Password"
+                           onfocus="onfocusinput(this)" onblur="onblurinput(this)"
+                           class="form-inputs"
+                           required"">
+                           <br>
+                           <label form="pwd" id="password-label" style="color:white">Verify Password</label>
+                    <input id="confirm_pass"
+                           type="password"
+                           name="confirm_pass"
+                           placeholder="Confirm Password"
+                           onfocus="onfocusinput(this)" onblur="onblurinput(this)"
+                           class="form-inputs"
+                           required
+                           onkeyup="validate_password()">
+                </div>
+                <span id="wrong_pass_alert"></span>
+                
+                <br>
+            
+                <a href="HOMEPAGE.html" style="text-decoration: none;"><input id="Submit" type="Submit" value="Create your Outcast account<3"  class="submit-button"></a>
+                <script>
+                    function myFunction() {
+                      alert("Your outcast registeration has been done successfully<3");
+                    }
+                    </script>
+                <script>
+                    function validate_password() {
+             
+                        var pass = document.getElementById('pass').value;
+                        var confirm_pass = document.getElementById('confirm_pass').value;
+                        if (pass != confirm_pass) {
+                            document.getElementById('wrong_pass_alert').style.color = 'red';
+                            document.getElementById('wrong_pass_alert').innerHTML
+                              = '☒ Use same password';
+                            document.getElementById('create').disabled = true;
+                            document.getElementById('create').style.opacity = (0.4);
+                        } else {
+                            document.getElementById('wrong_pass_alert').style.color = 'green';
+                            document.getElementById('wrong_pass_alert').innerHTML =
+                                '🗹 Password Matched';
+                            document.getElementById('create').disabled = false;
+                            document.getElementById('create').style.opacity = (1);
+                        }
+                    }
+             
+                    function wrong_pass_alert() {
+                        if (document.getElementById('pass').value != "" &&
+                            document.getElementById('confirm_pass').value != "") {
+                            alert("Your response is submitted");
+                        } else {
+                            alert("Please fill all the fields");
+                        }
+                    }
+                </script>
+                </div>
+                </form>
+            </section>
+            
+        
+        
+      </body>
+        <footer style="background-color: black;position:relative;top: 500px">
+            <br>
+            <br>
+            <div class="row 1">
+                <a href="https://www.facebook.com/Cristiano" target="_blank"><img src="fb.png" style="position: relative;;left: 600px" height="25" width="25"></a>
+                <a href="https://www.instagram.com/jeffbezos/?hl=en" target="_blank"><img src="insta.png" style="position: relative;;left: 650px" height="25" width="25"></a>
+                <a href="" target="_blank"><img src="twitch.png" style="position: relative;left:700px" height="25" width="25"></a>
+                <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="twitter.png" style="position: relative;;left: 750px" height="25" width="25"></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="youtube.png" style="position: relative;;left: 800px;bottom: 2px"></a>
+
+            </div>
+            <br>
+            <br>
+            <div class="row 2">
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px">Get the Outcast app
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px">Help
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px">Site Index
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px">OutcastPro
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px">Box Office Mojo
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px">Outcast Developers
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                
+            </div>
+            <br>
+            <div class="row 3">
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px">Press Room
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px">Advertising
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px">Jobs
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px">Condtions of Use
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px">Privacy Policy
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+                <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px">Internet-Based Ads
+                    <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+                </a>
+            </div>
+            <br>
+            
+            <center>
+                <div class="row 4">
+                    <p style="color: white;font-weight: bold">an&nbsp;<img src="amrita.png" width="70" height="30" style="position: relative;top:13px">&nbsp;Company</p>
+                </div>
+            </center>
+            <br>
+            <center><p style="color: grey;font-size:small">© 2021-2022 by Oucast.com, Inc.</p></center>
+
+        </footer>
+
+    </body>
+</html5

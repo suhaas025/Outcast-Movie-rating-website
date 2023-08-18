@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function trailer() {
+        document.getElementById('str').style.stroke = "orange";
+        document.getElementById('fi').style.fill = "orange";
+    }
+
+    function out() {
+        document.getElementById('str').style.stroke = "white";
+        document.getElementById('fi').style.fill = "white";
+    }
+
+    function trailer1() {
+        document.getElementById('str1').style.stroke = "orange";
+        document.getElementById('fi1').style.fill = "orange";
+    }
+
+    function out1() {
+        document.getElementById('str1').style.stroke = "white";
+        document.getElementById('fi1').style.fill = "white";
+    }
+
+    function trailer2() {
+        document.getElementById('str2').style.stroke = "orange";
+        document.getElementById('fi2').style.fill = "orange";
+    }
+
+    function out2() {
+        document.getElementById('str2').style.stroke = "white";
+        document.getElementById('fi2').style.fill = "white";
+    }
+</script>
+
+<body style="background-color: black;overflow: hidden">
+    <div style="height: 250px;width:500px;position: absolute;left: 400px">
+        <a href="Trailer.html" target="_blank" style="text-decoration: none"><img src="docwanda.jpg" height="250" width="400">
+            <svg width="80" height="50" style="position: relative;right: 400px;top:5px" onmouseover="trailer()" onmouseout="out()">
+                    <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="3" id="str"/>
+                    <polygon  points="31,25 21,30 21,20" fill="white" id="fi"/>
+                    <text fill="white" x="45" y="30">1:01</text>
+                    
+                </svg>
+            <br>
+
+            <img src="watchlist2.png" height="50" width="40" style="position: relative;top:5px">
+            <p style="color: grey;position: relative;left: 50px;bottom: 60px">May 6</p>
+            <p style="color: white;position: relative;left: 50px;bottom: 70px">Doctor Strange Multiverse of Madness</p>
+        </a>
+        <a href="">
+            <p style="color: skyblue;position: relative;left: 50px;bottom: 70px">Get tickets</p>
+        </a>
+
+    </div>
+    <div style="height: 250px;width:500px;position: abosulte;left: 1000px">
+        <a href="" style="text-decoration: none"><img src="thor.jpg" height="250" width="400">
+            <svg width="80" height="50" style="position: relative;right: 400px;top:5px" onmouseover="trailer1()" onmouseout="out1()">
+                    <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="3" id="str1"/>
+                    <polygon  points="31,25 21,30 21,20" fill="white" id="fi1"/>
+                    <text fill="white" x="45" y="30">1:30</text>
+                    
+                </svg>
+            <br>
+
+            <img src="watchlist2.png" height="50" width="40" style="position: relative;top:5px">
+            <p style="color: grey;position: relative;left: 50px;bottom: 60px">July 8</p>
+            <p style="color: white;position: relative;left: 50px;bottom: 70px">Thor Love and Thunder</p>
+        </a>
+        <a href="">
+            <p style="color: skyblue;position: relative;left: 50px;bottom: 70px">Get tickets</p>
+        </a>
+
+    </div>
+    <div style="height: 250px;width:500px;position: absolute;left: 850px;bottom: 180px">
+        <a href="" style="text-decoration: none"><img src="maverick.jpg" height="250" width="400">
+            <svg width="80" height="50" style="position: relative;right: 400px;top:5px" onmouseover="trailer2()" onmouseout="out2">
+                    <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="3" id="str2"/>
+                    <polygon  points="31,25 21,30 21,20" fill="white" id="fi2"/>
+                    <text fill="white" x="45" y="30">1:30</text>
+                    
+                </svg>
+            <br>
+
+            <img src="watchlist2.png" height="50" width="40" style="position: relative;top:5px">
+            <p style="color: grey;position: relative;left: 50px;bottom: 60px">May 10</p>
+            <p style="color: white;position: relative;left: 50px;bottom: 70px">Top Gun Maverick</p>
+        </a>
+        <a href="">
+            <p style="color: skyblue;position: relative;left: 50px;bottom: 70px">Get tickets</p>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

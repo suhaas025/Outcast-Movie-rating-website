@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css.css">
+    <title>
+        Outcast rating reviews and more.
+    </title>
+
+    <style>
+        .sidenav{
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            background-color: rgb(17, 17, 17);
+            opacity: 0.98;
+            overflow-x: hidden;
+            overflow-y:visible;
+            transition: 0.5s;
+        }
+
+        .sidenav::-webkit-scrollbar{
+            opacity: 0;
+        }
+
+        .sidenav a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover{
+            color: #f1f1f1
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .sidenavbutton{
+            z-index: 1;
+            top: 50%;
+            left: 0%;
+            padding-top: 30px;
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: black;
+        }
+
+        .sidenavbuttons{
+            width: 100px;
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+            margin-right: 10px;
+            background: transparent;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.height = "350px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.height = "0";
+        }
+
+        window.onclick = function(event){
+            if (event.target == document.getElementById("mySidenav")){
+                document.getElementById("mySidenav").style.height = "0";
+            }
+        }
+    </script>
+
+<header style="background-color: black;position: relative;left: 0px;bottom: 10px">
+    <div style="height:60px">
+        <a href="HOMEPAGE.html"><img src="logo.jpeg" alt="logo" height="40" width="70" style="position: relative;left: 110px;text-decoration: none;" /></a>
+        <!...have to work on menu option...>
+        <button class="sidenavbutton" onclick="openNav()" style="font-size: 20px; color: white;"><img src="menu.png" height="20" width="20" style="position: relative;left:130px;bottom: 6px;text-decoration: none">
+            <b style="color: white;position: relative; left: 130px;bottom: 10px;size: 10;font-size: 18px" class="line">Menu</b></button>
+        <!...menu...>
+        <div id="mySidenav" class="sidenav">
+            <button class="closebtn" onclick="closeNav()" style="position:absolute;right:300px;color: red;font-family: 'Calibri';background-color: black;background: transparent;border:none;">x</button>
+            <img src="logo.jpeg" alt="logo" height="40" width="70" style="position:absolute;left:300px;bottom:285px;">
+            <pre style="color:white;position:absolute;bottom:10px;left:310px"><h1 style="color:orange">Movies                    TV Shows                    Awards  & Events</h1><br>
+            <p style="position:absolute;bottom:180px">Release Calendar                                     What's on TV & Streaming                               Oscars</p><br>
+            <p style="position:absolute;bottom:160px">DVD & Blu-ray Releases                               Top 250 TV Shows                                       Best Picture Winners</p><br>
+            <p style="position:absolute;bottom:140px">Top 250 Movies                                       Most Popular TV Shows                                  Emmys</p><br>
+            <p style="position:absolute;bottom:120px">Most Popular Movies                                  Browse TV Shows by Genre                               STARmeter Awards</p><br>
+            <p style="position:absolute;bottom:100px">Browse Movies by Genre                               TV News                                                San Diego Comic-con</p><br>
+            <p style="position:absolute;bottom:80px">Top Box Office                                       India TV Spotlight                                     New York Comic-con</p></pre>
+            
+        </div>
+        <!...Seach bar...>
+        <select style="position: relative;left: 155px;bottom: 13px;height: 32px;width: 50px;background-color:rgba(245, 245, 245, 0.759);padding: 5px;font-weight: bold;border-radius: 5px">
+                <option style="position: relative;left: 287px;bottom: 22px;height: 35px;width: 50px;background-color:black;color: white;font-weight: bold" >All</option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Titles</option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">TV Episodes</option>
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">Advanced Search</option>
+            </select>
+        <input type="text" name="movie" placeholder="Search outcast.." size="90" style="position: relative;left: 150px; bottom: 13px;height: 25px;border-radius: 5px">
+        <button type="submit" style="position: relative;left:145px; bottom: 8px;border-radius: 5px"><img src="search.png" height="21.5" width="30" ></button>
+        <!...searchbar end...>
+
+        <a href="" style="text-decoration: none"><b style="size: 20px;position: relative;left: 160px;bottom: 10px;color: white" class="line">OutcastPro</b></a>
+        <!...vertical line...>
+        <img src="line.png" height="40" width="10" style="position: relative;left:170px;top: 3px">
+        <!...watchlist...>
+        <img src="watchlist.png" style="size: 20px;position: relative;left: 180px;top: 5px;">
+        <a href="main.html" style="text-decoration: none"><b style="size: 20px;position: relative;left: 185px;bottom: 10px; color:white" class="line">Watchlist</b></a>
+        <!...watchlistend...>
+        <!sign in...>
+        <a href="regitration.html" style="text-decoration: none"><b style="size: 20px;position: relative;left: 210px;bottom: 10px; color:white" class="line">Sign In</b></a>
+        <!...sign in end...>
+        <b><select style="position: relative;left: 230px;bottom: 10px;height: 35px;width: 50px;padding:5px;background-color:black;color: white;border: 0px;font-weight: bold " class="line">
+                <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold" ><b>EN</b></option>
+        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Telugu</b></option>
+        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Tamil</b></option>
+        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold"><b>Fracais</b></option>
+        <option style="background-color: black;color: white;height: 30px;width: 50px;font-weight: bold">German</option>
+
+
+        </select>
+        </b>
+
+    </div>
+</header>
+
+</head>
+
+
+
+<!...body edit yours here...>
+
+<body style="background-color: black;">
+    <script>
+        function trailer() {
+            document.getElementById('str').style.stroke = "orange";
+            document.getElementById('fi').style.fill = "orange";
+        }
+
+        function out() {
+            document.getElementById('str').style.stroke = "white";
+            document.getElementById('fi').style.fill = "white";
+        }
+
+        function trailer1() {
+            document.getElementById('str1').style.stroke = "orange";
+            document.getElementById('fi1').style.fill = "orange";
+        }
+
+        function out1() {
+            document.getElementById('str1').style.stroke = "white";
+            document.getElementById('fi1').style.fill = "white";
+        }
+
+        function trailer2() {
+            document.getElementById('str2').style.stroke = "orange";
+            document.getElementById('fi2').style.fill = "orange";
+        }
+
+        function out2() {
+            document.getElementById('str2').style.stroke = "white";
+            document.getElementById('fi2').style.fill = "white";
+        }
+
+
+        function arrowout() {
+            document.getElementById('a').style.stroke = "white";
+            document.getElementById('b').style.stroke = "white";
+
+        }
+
+        function arrowin() {
+            document.getElementById('a').style.stroke = "orange";
+            document.getElementById('b').style.stroke = "orange";
+        }
+
+        function arrowout1() {
+            document.getElementById('c').style.stroke = "white";
+            document.getElementById('d').style.stroke = "white";
+
+        }
+
+        function arrowin1() {
+            document.getElementById('c').style.stroke = "orange";
+            document.getElementById('d').style.stroke = "orange";
+        }
+
+        function arrowout2() {
+            document.getElementById('e').style.stroke = "white";
+            document.getElementById('f').style.stroke = "white";
+
+        }
+
+        function arrowin2() {
+            document.getElementById('e').style.stroke = "orange";
+            document.getElementById('f').style.stroke = "orange";
+        }
+
+        function arrowout3() {
+            document.getElementById('g').style.stroke = "white";
+            document.getElementById('h').style.stroke = "white";
+
+        }
+
+        function arrowin3() {
+            document.getElementById('g').style.stroke = "orange";
+            document.getElementById('h').style.stroke = "orange";
+        }
+
+        function arrowout4() {
+            document.getElementById('y').style.stroke = "white";
+            document.getElementById('z').style.stroke = "white";
+
+        }
+
+        function arrowin4() {
+            document.getElementById('y').style.stroke = "orange";
+            document.getElementById('z').style.stroke = "orange";
+        }
+    </script>
+    <style>
+        #container {
+            width: 950px;
+            height: 600px;
+            overflow: hidden;
+        }
+        
+        iframe.slider {
+            width: 900px;
+            height: 600px;
+            overflow-y: hidden;
+        }
+        
+        .prime:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 2.5px 0px orange;
+            transition: 0.5s;
+            overflow-y: hidden;
+        }
+        
+        .line:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 2px 0px orange;
+            transition: 0.5s;
+        }
+        
+        .white:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 2px 0px white;
+            transition: 0.5s;
+        }
+        
+        .stroke:hover {
+            transition: 0.5s;
+            stroke: orange;
+        }
+        
+        .fill:hover {
+            transition: 0.5s;
+            fill: orange;
+            transform: scale(1.02);
+        }
+        
+        .scale:hover {
+            transform: scale(1.02);
+        }
+        body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <!...slider...>
+    <div id="container">
+        <iframe src="images.html" class="slider" height="550px" width="800px" style="position: absolute;left: 110px; border: 0px">
+            <script type="text/javascript">
+                var image_tracker = 'orange';
+        
+                function change() {
+                    var image = document.getElementById('circle');
+                    if (image_tracker == 'orange') {
+                        image.src = 'blockhitjpg.jpg';
+                        image_tracker = 'blue';
+                    } else if (image_tracker == 'blue') {
+                        image.src = 'shangchi.jpg';
+                        image_tracker = 'green';
+                    } else if (image_tracker == 'green') {
+                        image.src = 'batman1.jpg';
+                        image_tracker = 'yellow';
+                    } else if (image_tracker == 'yellow') {
+                        image.src = 'avatar.jpg';
+                        image_tracker = 'orange';
+                    }
+                }
+                var timer = setInterval('change();', 3000);
+            </script>
+        </iframe>
+    </div>
+    <!...up next...>
+    <section style="position: absolute;left: 1050px;bottom: -270px">
+        <h2 style="color: orange;font-weight: bold;width: 90px;" class="white">Up next</h2>
+        <div>
+            <img src="morbius.jpg" height="130" width="100">
+            <a href="Trailer.html" style="text-decoration: none">
+                <svg width="50" height="50" style="position: relative;bottom:90px;left:10px" onmouseover="trailer()" onmouseout="out()">
+                    
+                        <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="1.5" id="str"/>
+                        <polygon  points="31,25 21,30 21,20" fill="white" id="fi"/>
+                        
+                    </svg>
+                <p style="color: grey;position: relative;left: 165px;bottom: 140px">1.44</p>
+                <p style="font-weight: bold;color: white;position: relative;left: 130px;bottom: 145px">'Morbius'</p>
+                <p style="color: grey;position:relative;left: 130px;bottom: 155px;">Watch the final trailer</p>
+            </a>
+        </div>
+        <div style="position: relative;bottom: 110px">
+            <img src="topgun.jpg" height="130" width="100">
+            <a href="Trailer.html" style="text-decoration: none">
+                <svg width="50" height="50" style="position: relative;bottom:90px;left:10px" onmouseover="trailer1()" onmouseout="out1()">
+                        <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="1.5" id="str1"/>
+                        <polygon  points="31,25 21,30 21,20" fill="white" id="fi1"/>
+                        
+                    </svg>
+                <p style="color: grey;position: relative;left: 165px;bottom: 140px">3.19</p>
+                <p style="font-weight: bold;color: white;position: relative;left: 130px;bottom: 145px">Everything We Know About 'Top Gun Maverik' </p>
+                <p style="color: grey;position:relative;left: 130px;bottom: 155px;">All About High-Flying Sequel</p>
+            </a>
+        </div>
+        <div style="position: relative;bottom: 210px">
+            <img src="northman.jpg" height="130" width="100">
+            <a href="Trailer.html" style="text-decoration: none">
+                <svg width="50" height="50" style="position: relative;bottom:90px;left:10px" onmouseover="trailer2()" onmouseout="out2()">
+                        <circle r="15" stroke="white"  cx="25" cy="25" stroke-width="1.5" id="str2"/>
+                        <polygon  points="31,25 21,30 21,20" fill="white" id="fi2"/>
+                        
+                    </svg>
+                <p style="color: grey;position: relative;left: 165px;bottom: 140px">3.19</p>
+                <p style="font-weight: bold;color: white;position: relative;left: 130px;bottom: 145px">Alexander Skarsgard Is 'The Northman' </p>
+                <p style="color: grey;position:relative;left: 130px;bottom: 155px;">Watch the New Trailer</p>
+            </a>
+        </div>
+        <br>
+        <a href="Videos.html" style="color: orange;text-decoration: none">
+            <h2 style="font-weight: bold;position: relative;bottom: 325px; width: 185px;" class="white">Browse trailers
+                <svg width="20" height="20" style="position: relative;left: 3px;top: 3px">
+                    <polygon points="1,19 9,9" stroke="white" stroke-width="3"/>
+                    <polygon points="9,9 1,1" stroke="white" stroke-width="3"/>
+                </svg>
+        </a>
+        </h2>
+
+
+    </section>
+    <br>
+    <!...Featured today...>
+    <div>
+        <h1 style="color: orange;position: absolute;left: 110px;top: 600px;;font-weight: bold" class="white">Featured today</h1>
+        <div style="position: absolute;left:110px;">
+            <a href="Top 10 action.html" style="color: white;text-decoration: none">
+                <img src="list.png" height="250" width="450"><br>
+                <p style="font-size: large;font-weight:bold">The best movies & Shows to Watch in April</p>
+
+            </a>
+        </div>
+        <div style="position: absolute;left:670px;">
+            <a href="" style="color: white;text-decoration: none">
+                <img src="birthday.png" height="250" width="450"><br>
+                <p style="font-size: large;font-weight:bold">Happy Birthday! Celebrities born in April</p>
+
+            </a>
+        </div>
+    </div>
+    <br>
+    <!...What to watch...>
+    <h1 style="color: orange;position:absolute;left: 110px;top: 1150px" class="white">What to watch</h1>
+    <div style="position:absolute;left:65px;top: 1250px">
+        <a href="main.html"><svg width="300" height="180" class="fill" onmouseout="arrowout()" onmouseover="arrowin()">
+                <rect x="50" y="10" rx="4" ry="4" width="5" height="35"
+                style="fill:rgb(255, 167, 3);" />
+                <text fill="white" font-size="25" font-weight="bold" x="60" y="35" style="font-weight:bold;" >From Your watchlist</text>
+                <polygon points="290,23 295,28" stroke="white"    id="a"/>
+                <polygon points="295,28 290,33" stroke="white"    id="b"/>
+            </svg></a>
+        <center><img src="watchlist.png" height="70" width="40" style="position: relative;bottom:100px;left:500px "></center>
+        <center>
+            <p style="color: white;position:relative;bottom:100px;left:500px"><b>Sign in to access your Watchlist</b></p>
+            <p style="color: white;position:relative;bottom:100px;left:500px">Save shows and movies to keep track of what you want to watch.</p>
+            <br>
+            <a href="regitration.html"><svg width="250" height="180" style="position:relative;bottom:100px;left:500px">
+                    <rect x="50" y="10" rx="4" ry="4" width="150" height="35"
+                    style="fill:rgb(255, 167, 3);" />
+                    <text fill="black" font-size="15" font-weight="bold" x="63" y="33" style="font-weight:bold;">Sign In to Outcast</text>
+                    
+                </svg></a>
+        </center>
+
+
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <!...Fan Favourite...>
+    <div style="position: absolute;top: 3000px;left: 65px">
+        <a href="" style="text-decoration: none">
+            <svg width="300" height="180" style="position:relative;bottom:1400px" class="fill" onmouseover="arrowin1()" onmouseout="arrowout1()">
+                <rect x="50" y="10" rx="4" ry="4" width="5" height="35"
+                style="fill:rgb(255, 167, 3);" />
+                <text fill="white" font-size="25" font-weight="bold" x="60" y="35" style="font-weight:bold;" >Fan favorites</text>
+                <polygon points="220,23 225,28" stroke="white"    id="c" />
+                <polygon points="225,28 220,33" stroke="white"    id="d" />
+                </svg>
+            <p style="color: grey;position: relative;left: 50px;bottom: 1500px;font-weight: bold">This week's top Movies and TV Shows</p>
+        </a>
+        <br>
+        <br>
+        <br>
+        <iframe src="fan.html" width="1200px" height="590px" style="position:relative;left: 50px;bottom:1550px;border: 0px">
+
+            </iframe>
+
+    </div>
+    <!...Explore...>
+
+    <div style="position:absolute;left:120px;top: 2500px">
+        <h1 style="color: orange;font-weight:bold;" class="white">Explore what's streaming</h1>
+        <br>
+        <a href="prime.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color:white" target="explore" class="prime">PRIME VIDEO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="netflix.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color: white" target="explore" class="prime">NETFLIX</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="fan.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color: white" target="explore" class="prime">HOTSTAR</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="prime.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color: white" target="explore" class="prime">MX PLAYER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="fan.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color: white" target="explore" class="prime">JIOCINEMA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="netflix.html" style="text-decoration: none;font-weight: bold;font-size: 15px;color: white" target="explore" class="prime">VOOT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br>
+        <br>
+        <iframe src="prime.html" name="explore" height="590px" width="1200px" style="border:0px"></iframe>
+    </div>
+    <br>
+    <br>
+    <h1 style="color: orange;position:relative;left: 120px;top:2450px;font-weight: bold ;width: 1200px;" class="white">Explore Movies & TV shows</h1>
+
+    <!...in theatres...>
+    <div style="position: absolute;left: 75px;top: 3400px">
+        <a href="" style="text-decoration: none">
+            <svg width="300" height="180">
+                <rect x="50" y="10" rx="4" ry="4" width="5" height="35"
+                style="fill:rgb(255, 167, 3);" />
+                <text fill="white" font-size="25" font-weight="bold" x="60" y="35" style="font-weight:bold;" class="prime" onmouseover="arrowin2()" onmouseout="arrowout2()">In theatres</text>
+                <polygon points="200,23 205,28" stroke="white" fill="white" id="e"/>
+                <polygon points="205,28 200,33" stroke="white" fill="white" id="f"/>
+                </svg>
+            <p style="color: grey;position: relative;left: 50px;bottom: 150px;font-weight: bold">Showtimes near you</p>
+        </a>
+
+    </div>
+    <iframe src="fan.html" height="590px" width="1200px" style="border:0px;position:relative;left: 110px;top: 2600px"></iframe>
+    <br>
+    <div style="position: absolute;top: 4300px;left: 70px">
+        <div style="width:200px">
+            <a href="" style="text-decoration: none">
+                <svg width="500" height="180">
+                    <rect x="50" y="10" rx="4" ry="4" width="5" height="35"
+                    style="fill:rgb(255, 167, 3);" />
+                    <text fill="white" font-size="25" font-weight="bold" x="60" y="35" style="font-weight:bold;" class="prime" onmouseover="arrowin4()" onmouseout="arrowout4()">Top box office(IN)</text>
+                    <polygon points="270,23 275,28" stroke="white" fill="white" id="y"/>
+                    <polygon points="275,28 270,33" stroke="white" fill="white" id="z"/>
+                    </svg>
+                <br>
+                <p style="color: grey;position: relative;left: 50px;bottom: 140px;font-weight: bold">Weekend of April 25-31</p>
+            </a>
+
+        </div>
+        <div style="width:200px;height:300px;position: absolute;top: 550px;left: 50px">
+            <p style="color: white;position: relative;bottom: 425px">1</p>
+
+            <a href="">
+                <svg width="420" height="250" style="position: relative;bottom: 470px;right:35px">
+                    <rect x="50" y="12" rx="1" ry="1" width="1.5" height="15"
+                    style="fill:rgb(255, 167, 3);" />
+                    <image href="watchlist2.png" height="140" width="40" x="55" y="-45"  opacity="1"/>
+                    <text  font-size="20"fill="white" x="95" y="25">Fantastic Beasts:Secrets of Dumbledore</text>
+                    <text font-size="15" fill="grey" x="95" y="45">$ 4 2 M</text>
+                    
+                    </svg></a>
+
+
+
+
+
+        </div>
+        <div style="height:300px;position: absolute;top: 550px;left: 650px">
+            <p style="color: white;position: relative;bottom: 425px">2</p>
+
+            <a href="" style="text-decoration: none">
+                <svg width="420" height="250" style="position: relative;bottom: 470px;right:35px">
+                    <rect x="50" y="12" rx="1" ry="1" width="1.5" height="15"
+                    style="fill:rgb(255, 167, 3);" />
+                    <image href="watchlist2.png" height="140" width="40" x="55" y="-45"  opacity="1"/>
+                    <text  font-size="20"fill="white" x="95" y="25">Sonic the Hedgehog 2</text>
+                    <text font-size="15" fill="grey" x="95" y="45">$ 2 9 M</text>
+                    
+                    </svg>
+
+
+            </a>
+        </div>
+        <div style="position: absolute;left: 50px;top: 650px">
+            <p style="color: white;position: relative;bottom: 425px">3</p>
+
+            <a href="" style="text-decoration: none">
+                <svg width="420" height="250" style="position: relative;bottom: 470px;right:35px">
+                    <rect x="50" y="12" rx="1" ry="1" width="1.5" height="15"
+                    style="fill:rgb(255, 167, 3);" />
+                    <image href="watchlist2.png" height="140" width="40" x="55" y="-45"  opacity="1"/>
+                    <text  font-size="20"fill="white" x="95" y="25">morbius</text>
+                    <text font-size="15" fill="grey" x="95" y="45">$ 4.7 M</text>
+                    
+                    </svg>
+
+
+            </a>
+        </div>
+
+
+    </div>
+    <!...coming soon...>
+    <div style="position: absolute;top: 4700px;left: 70px">
+        <a href="" style="text-decoration: none">
+            <svg width="500" height="180">
+                <rect x="50" y="10" rx="4" ry="4" width="5" height="35"
+                style="fill:rgb(255, 167, 3);" />
+                <text fill="white" font-size="25" font-weight="bold" x="60" y="35" style="font-weight:bold;" class="prime" onmouseover="arrowin3()" onmouseout="arrowout3()">Coming soon to theatres(IN)</text>
+                <polygon points="380,23 385,28" stroke="white" fill="white" id="g"/>
+                <polygon points="385,28 380,33" stroke="white" fill="white" id="h"/>
+                </svg>
+            <p style="color: grey;position: relative;left: 50px;bottom: 150px;font-weight: bold">Trailers for upcoming releases</p>
+        </a>
+
+        <iframe src="trailers.html" height="450px" width="1200px" style="border:0px;position:relative;left:50px;"></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!....body end...>
+
+
+    <!...footer...>
+
+</body>
+<footer style="background-color: black;position: relative;top: 4150px">
+    <br>
+    <br>
+    <div class="row 1">
+        <a href="https://www.facebook.com/Cristiano" target="_blank"><img src="fb.png" style="position: relative;;left: 600px" height="25" width="25"></a>
+        <a href="https://www.instagram.com/jeffbezos/?hl=en" target="_blank"><img src="insta.png" style="position: relative;;left: 650px" height="25" width="25"></a>
+        <a href="" target="_blank"><img src="twitch.png" style="position: relative;left:700px" height="25" width="25"></a>
+        <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="twitter.png" style="position: relative;;left: 750px" height="25" width="25"></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="youtube.png" style="position: relative;;left: 800px;bottom: 2px"></a>
+
+    </div>
+    <br>
+    <br>
+    <div class="row 2">
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px;text-decoration:none;">Get the Outcast app
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px;text-decoration:none;">Help
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px;text-decoration:none;">Site Index
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px;text-decoration:none;">OutcastPro
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px;text-decoration:none;">Box Office Mojo
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px;text-decoration:none;">Outcast Developers
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+
+    </div>
+    <br>
+    <div class="row 3">
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 350px;text-decoration:none;">Press Room
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 370px;text-decoration:none;">Advertising
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 390px;text-decoration:none;">Jobs
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 410px;text-decoration:none;">Condtions of Use
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 430px;text-decoration:none;">Privacy Policy
+                <img src="arrow.png" height="20" width="20" style="position: relative;top:5px;right: 5px">
+            </a>
+        <a href="" target="_blank" style="color: white;font-weight: bold;position: relative;left: 450px;text-decoration:none;">Internet-Based Ads
+                <img src="arrow.png" height="20" width="20" style="position:relative;top:5px;right: 5px">
+            </a>
+    </div>
+    <br>
+
+    <center>
+        <div class="row 4">
+            <p style="color: white;font-weight: bold">an&nbsp;<img src="amrita.png" width="70" height="30" style="position: relative;top:13px">&nbsp;Company</p>
+        </div>
+    </center>
+    <br>
+    <center>
+        <p style="color: grey;font-size:small">© 2021-2022 by Oucast.com, Inc.</p>
+    </center>
+    <br>
+
+</footer>
+
+
+</html>
